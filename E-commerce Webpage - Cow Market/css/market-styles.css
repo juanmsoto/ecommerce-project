@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main { 
+    font-family: 'roboto', sans-serif;
+}
+
+/* Search bar */
+.search {
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-bottom: 2px solid #a2a2a2;
+}
+
+.search__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.search__flex-item { 
+    width: 100%;
+}
+
+.search__input-field {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+.search__filter, .search__button { 
+    width: 20px;
+    cursor: pointer;
+}
+
+.search__image, .filter__image {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Posts */
+.posts {
+    padding: 40px 80px;
+}
+
+/* Grid property */
+.posts__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px;
+    row-gap: 25px;
+}
+
+/* Post items */
+.posts__item {
+    border-radius: 10px;
+    background-color: #f1edec;
+    position: relative;
+}
+
+.posts__image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.posts__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    pointer-events: none;
+    z-index: 1500;
+    border-radius: 10px 10px 0 0;
+}
+
+.posts__cattle-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Posts content */
+.posts__content {
+    padding: 0 25px 25px;
+}
+
+.posts__title, .posts__description {
+    margin: 0 0 15px;
+}
+
+.posts__title {
+    margin-top: 20px;
+}
+
+.posts__button {
+    padding: 12px;
+    background-color: #7b4f4b;
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+
+/* Verified users */
+.posts__verified {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2000;
+}
+
+.posts__user { 
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.posts__verified-image {
+    display: block;
+    object-fit: contain;
+    width: 32px;
+}
+
+/* Post detail */
+.posts__detail {
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px); /* fondo borroso */
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.posts__detail-container {
+    border-radius: 10px;
+    background-color: #f1edec;
+    position: relative;
+    width: 400px;
+}
+
+.posts__detail-close {
+    position: absolute;
+    z-index: 3000;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+}
+
+.posts__detail-close-image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}

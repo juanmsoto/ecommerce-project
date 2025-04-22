@@ -3,74 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* HEADER - NAV */
-.header {
-    background-color: #7b4f41;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 20px;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    font-family: "Roboto Slab", serif;
-}
-
-.header__logo{ 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 20px;
-}
-
-.logo-container {
-    width: 70px;
-}
-
-.logo__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.logo__link {
-    text-decoration: none;
-    color: white;
-}
-
-.logo__title {
-    font-weight: 400;
-}
-
-.header__nav {
-    /**/
-}
-
-.header__nav-list {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    column-gap: 30px;
-    font-size: 18px;
-}
-
-.list-item .item__link {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.item__link:hover {
-    color: #b2b2b2;
-}
-
-
 /* Main */
 
 /* Welcome image */
@@ -116,6 +48,7 @@ main {
 .content__title {
     font-size: 40px;
     margin-bottom: 12px;
+    font-family: "Roboto Slab", serif;
 }
 
 .content__p {
@@ -146,12 +79,14 @@ main {
 /* Introduction */
 
 .intro {
+    margin: 70px 0;
     padding: 50px 15px 0;
 }
 
 .intro__title {
     font-size: 35px;
     text-align: center;
+    font-family: "Roboto Slab", serif;
 }
 
 .intro__flex {
@@ -160,12 +95,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .intro__container  {
-    width: 300px;
+    width: 350px;
     padding: 30px;
     text-align: center;
     background-color: #cab8b3;
@@ -197,6 +132,7 @@ main {
 /* FAQ */
 
 .faq {
+    margin: 90px 0;
     padding: 50px 45px;
 }
 
@@ -204,6 +140,7 @@ main {
     font-size: 35px;
     text-align: center;
     margin-bottom: 25px;
+    font-family: "Roboto Slab", serif;
 }
 
 .faq__item {
@@ -211,6 +148,12 @@ main {
     border: #7b4f41 solid 2px;
     border-radius: 12px;
     margin: 10px 0;
+    transform: background-color 0.3s ease;
+}
+
+.faq__item:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
 }
 
 .faq__item-reveal {
@@ -218,20 +161,11 @@ main {
     justify-content: space-between;
 }
 
-.faq__item-title {
-    /**/
-}
-
 .faq__item-icon {
     padding: 2px;
     width: 20px;
     height: 20px;
-    transform: background-color 0.3s ease;
     border-radius: 40%;
-}
-
-.faq__item-icon:hover {
-    background-color: #e2e2e2;
 }
 
 .faq__item-icon-image {
