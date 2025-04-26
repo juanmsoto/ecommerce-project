@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Market</title>
+    <link rel="icon" href="images/cow-market-logo-white.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="logo-container">
+                <a href="index.html" class="logo__link"><img src="images/cow-market-logo-white.png" class="logo__image"></a>
+            </div>
+            <a href="index.html" class="logo__link"><h1 class="logo__title">Cow Market</h1></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="list-item item--1"><a href="/index.html" class="item__link">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container-login">
+            <div class="login-video">
+                <video autoplay loop muted playsinline class="login-video__video">
+                    <source src="videos/cowvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="login-form">
+                <div class="login-form-container">
+                    <h1 class="login-form__title login-form-item--1">Welcome back</h1>
+
+                    <form class="login-form__form login-form-item--2">
+                        <input type="email" class="form__input form-item--1" placeholder="Email address" required style="display: block;">
+                        <button type="submit" class="form__button form-item--2">Continue</button>
+                    </form>
+
+                    <p class="login-form__p login-form-item--3">Don't have an account? <a href="#" class="login-form__signup">Sign Up</a></p>
+
+                    <div class="login-form__separator login-form-item--4">
+                        <div class="separator__line"></div>
+                        <div class="separator__word">OR</div>
+                    </div>
+
+                    <div class="login-form__google">
+                        <button class="google__button">
+                            <img src="images/google-logo.svg" class="google__logo" alt="Google Logo">
+                            Continue with Google
+                        </button>
+                    </div>
+
+                </div>  
+            </div>
+        </div>
+    </main>
+
+</body>
